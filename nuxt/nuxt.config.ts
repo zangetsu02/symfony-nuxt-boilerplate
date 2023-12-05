@@ -3,5 +3,13 @@ export default defineNuxtConfig({
   devtools: { enabled: true },
   devServer: {
     port: 8001
+  },
+  vite: {
+    server: {
+      watch: {
+        usePolling: true,
+        interval: 1000,
+      }
+    }
   }
 })
