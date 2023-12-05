@@ -1,10 +1,6 @@
 /.idea
-/node_modules/
-/public/build/
-npm-debug.log
-yarn-error.log
 
-###> symfony/framework-bundle ###
+# symfony
 /.env.local
 /.env.local.php
 /.env.*.local
@@ -12,4 +8,28 @@ yarn-error.log
 /public/bundles/
 /var/
 /vendor/
-###< symfony/framework-bundle ###
+
+# Nuxt dev/build outputs
+.output
+.data
+.nuxt
+.nitro
+.cache
+dist
+
+# Node dependencies
+node_modules
+
+# Logs
+logs
+*.log
+
+# Misc
+.DS_Store
+.fleet
+.idea
+
+# Local env files
+.env
+.env.*
+!.env.example
