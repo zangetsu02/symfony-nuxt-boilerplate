@@ -47,6 +47,7 @@ services:
         networks:
             - php-postgres-node
         tty: true
+        command: ["npm", "run", 'dev']
 
     composer:
         build:
