@@ -39,6 +39,8 @@ services:
     node:
         image: node:21-alpine3.17
         container_name: node
+        ports:
+            - "8001:8001"
         volumes:
           - ./nuxt:/home/node/app
         working_dir: /home/node/app
